@@ -10,7 +10,7 @@ To run the benchmark yourself, clone this repository and run
 
 Then run `Main.java`.
 
-# Conclusion
+# Results
 
 Below are the results when run on a laptop with Windows 10 and an Intel Core i5 1.9 GHz processor.
 The Event Router library uses low two-digit micro seconds per dispatch with very little jitter.
