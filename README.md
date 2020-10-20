@@ -12,9 +12,9 @@ Then run `Main.java`.
 
 # Results
 
-Below are the results when run on a laptop with Windows 10 and an Intel Core i5 1.9 GHz processor.
+Below are the results when run on a server with Red Hat 4.8, Intel Xeon Gold 6254 processor and OpenJdk 14.0.2.
 The Event Router library uses low two-digit micro seconds per dispatch with very little jitter.
-It's roughly 6 times faster then Google Guava's EventBus that also has more jitter.
+It's roughly 6 times faster than Google Guava's EventBus that also has more jitter.
 
 Lower is better:
 
