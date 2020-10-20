@@ -23,7 +23,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<jmh.version>1.23</jmh.version>
 		<guava.version>29.0-jre</guava.version>
-		<event.router.version>0.0.1</event.router.version>
+		<event.router.version>1.0.0</event.router.version>
 	</properties>
 
 	<build>
@@ -54,6 +54,11 @@
 	</build>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-nop</artifactId>
+			<version>1.7.26</version>
+		</dependency>
 		<dependency>
 			<groupId>org.openjdk.jmh</groupId>
 			<artifactId>jmh-core</artifactId>
