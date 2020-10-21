@@ -18,30 +18,30 @@ It's roughly 6 times faster than Google Guava's EventBus that also has more jitt
 
 Lower is better:
 
-    Benchmark                                                 (cpuConsumption)  Mode  Cnt     Score    Error  Units
-    EventBusVsEventRouter10Events.testEventBusOneEvent                       0  avgt   25   221,564 ± 10,773  ns/op
-    EventBusVsEventRouter10Events.testEventBusOneEvent                       1  avgt   25   220,243 ±  4,264  ns/op
-    EventBusVsEventRouter10Events.testEventBusOneEvent                      64  avgt   25   535,465 ±  5,516  ns/op
-    EventBusVsEventRouter10Events.testEventBusTenEvents                      0  avgt   25  2322,245 ± 64,294  ns/op
-    EventBusVsEventRouter10Events.testEventBusTenEvents                      1  avgt   25  2387,852 ± 56,613  ns/op
-    EventBusVsEventRouter10Events.testEventBusTenEvents                     64  avgt   25  4189,821 ± 51,130  ns/op
-    EventBusVsEventRouter10Events.testEventBusThreeEvents                    0  avgt   25   744,738 ± 29,301  ns/op
-    EventBusVsEventRouter10Events.testEventBusThreeEvents                    1  avgt   25   754,439 ± 19,878  ns/op
-    EventBusVsEventRouter10Events.testEventBusThreeEvents                   64  avgt   25  1562,330 ± 23,382  ns/op
-    EventBusVsEventRouter10Events.testEventRouterOneEvent                    0  avgt   25    36,068 ±  1,240  ns/op
-    EventBusVsEventRouter10Events.testEventRouterOneEvent                    1  avgt   25    36,763 ±  0,594  ns/op
-    EventBusVsEventRouter10Events.testEventRouterOneEvent                   64  avgt   25   247,794 ±  0,902  ns/op
-    EventBusVsEventRouter10Events.testEventRouterTenEvents                   0  avgt   25   301,472 ± 10,379  ns/op
-    EventBusVsEventRouter10Events.testEventRouterTenEvents                   1  avgt   25   311,047 ±  5,974  ns/op
-    EventBusVsEventRouter10Events.testEventRouterTenEvents                  64  avgt   25  1778,731 ±  6,521  ns/op
-    EventBusVsEventRouter10Events.testEventRouterThreeEvents                 0  avgt   25   112,158 ±  9,690  ns/op
-    EventBusVsEventRouter10Events.testEventRouterThreeEvents                 1  avgt   25   107,751 ±  2,852  ns/op
-    EventBusVsEventRouter10Events.testEventRouterThreeEvents                64  avgt   25   745,729 ±  3,018  ns/op
-    EventBusVsEventRouter3Events.testEventBusOneEvent                        1  avgt   25   200,353 ±  8,354  ns/op
-    EventBusVsEventRouter3Events.testEventBusOneEvent                       64  avgt   25   414,834 ±  8,188  ns/op
-    EventBusVsEventRouter3Events.testEventBusThreeEvents                     1  avgt   25   649,827 ± 14,540  ns/op
-    EventBusVsEventRouter3Events.testEventBusThreeEvents                    64  avgt   25  1328,526 ± 99,277  ns/op
-    EventBusVsEventRouter3Events.testEventRouterOneEvent                     1  avgt   25    38,115 ±  0,909  ns/op
-    EventBusVsEventRouter3Events.testEventRouterOneEvent                    64  avgt   25   246,857 ±  2,745  ns/op
-    EventBusVsEventRouter3Events.testEventRouterThreeEvents                  1  avgt   25   110,811 ±  3,528  ns/op
-    EventBusVsEventRouter3Events.testEventRouterThreeEvents                 64  avgt   25   741,038 ±  3,145  ns/op
+    Benchmark                                           (cpuConsumption)  Mode  Cnt     Score     Error  Units
+    EventBusVsEventRouter10Events.testEventBusOneEvent                 0  avgt   25   399.212 ±  23.728  ns/op
+    EventBusVsEventRouter10Events.testEventBusOneEvent                 1  avgt   25   409.911 ±  23.426  ns/op
+    EventBusVsEventRouter10Events.testEventBusOneEvent                64  avgt   25   893.436 ±  63.677  ns/op
+    EventBusVsEventRouter10Events.testEventBusTenEvents                0  avgt   25  3921.423 ± 201.513  ns/op
+    EventBusVsEventRouter10Events.testEventBusTenEvents                1  avgt   25  3860.776 ± 151.005  ns/op
+    EventBusVsEventRouter10Events.testEventBusTenEvents               64  avgt   25  6685.643 ± 397.382  ns/op
+    EventBusVsEventRouter10Events.testEventBusThreeEvents              0  avgt   25  1240.096 ±  52.018  ns/op
+    EventBusVsEventRouter10Events.testEventBusThreeEvents              1  avgt   25  1267.164 ±  58.207  ns/op
+    EventBusVsEventRouter10Events.testEventBusThreeEvents             64  avgt   25  2569.645 ± 164.050  ns/op
+    EventBusVsEventRouter10Events.testEventRouterOneEvent              0  avgt   25    62.565 ±   3.699  ns/op
+    EventBusVsEventRouter10Events.testEventRouterOneEvent              1  avgt   25    68.430 ±   3.360  ns/op
+    EventBusVsEventRouter10Events.testEventRouterOneEvent             64  avgt   25   379.454 ±  23.287  ns/op
+    EventBusVsEventRouter10Events.testEventRouterTenEvents             0  avgt   25   597.980 ±  33.717  ns/op
+    EventBusVsEventRouter10Events.testEventRouterTenEvents             1  avgt   25   612.713 ±  24.754  ns/op
+    EventBusVsEventRouter10Events.testEventRouterTenEvents            64  avgt   25  2814.015 ± 130.773  ns/op
+    EventBusVsEventRouter10Events.testEventRouterThreeEvents           0  avgt   25   200.930 ±   9.919  ns/op
+    EventBusVsEventRouter10Events.testEventRouterThreeEvents           1  avgt   25   212.017 ±  10.066  ns/op
+    EventBusVsEventRouter10Events.testEventRouterThreeEvents          64  avgt   25  1114.913 ±  77.195  ns/op
+    EventBusVsEventRouter3Events.testEventBusOneEvent                  1  avgt   25   362.365 ±  17.909  ns/op
+    EventBusVsEventRouter3Events.testEventBusOneEvent                 64  avgt   25   713.632 ±  38.251  ns/op
+    EventBusVsEventRouter3Events.testEventBusThreeEvents               1  avgt   25  1154.882 ±  55.211  ns/op
+    EventBusVsEventRouter3Events.testEventBusThreeEvents              64  avgt   25  2114.264 ± 139.619  ns/op
+    EventBusVsEventRouter3Events.testEventRouterOneEvent               1  avgt   25    68.563 ±   2.819  ns/op
+    EventBusVsEventRouter3Events.testEventRouterOneEvent              64  avgt   25   379.839 ±  19.440  ns/op
+    EventBusVsEventRouter3Events.testEventRouterThreeEvents            1  avgt   25   210.791 ±  10.617  ns/op
+    EventBusVsEventRouter3Events.testEventRouterThreeEvents           64  avgt   25  1145.427 ±  48.404  ns/op
