@@ -1,4 +1,4 @@
-package com.github.danskemarkets.handlers;
+package dk.danskebank.markets.event.routing.handlers;
 
 import org.openjdk.jmh.infra.Blackhole;
 

@@ -1,8 +1,8 @@
-package com.github.danskemarkets.handlers;
+package dk.danskebank.markets.event.routing.handlers;
 
-import com.github.danskemarkets.events.Event10;
-import com.github.danskemarkets.events.Event3;
-import com.github.danskemarkets.events.Event4;
+import dk.danskebank.markets.event.routing.events.Event10;
+import dk.danskebank.markets.event.routing.events.Event3;
+import dk.danskebank.markets.event.routing.events.Event4;
 import com.google.common.eventbus.Subscribe;
 import org.openjdk.jmh.infra.Blackhole;
 

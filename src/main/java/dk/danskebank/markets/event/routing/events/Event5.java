@@ -1,4 +1,4 @@
-package com.github.danskemarkets.events;
+package dk.danskebank.markets.event.routing.events;
 
 public class Event5 implements Event {
 	private final String text;

@@ -1,15 +1,14 @@
-package com.github.danskemarkets;
+package dk.danskebank.markets.event.routing;
 
-import com.github.danskemarkets.events.Event1;
-import com.github.danskemarkets.events.Event2;
-import com.github.danskemarkets.events.Event3;
-import com.github.danskemarkets.handlers.Handler1;
-import com.github.danskemarkets.handlers.Handler2;
-import com.github.danskemarkets.handlers.Handler3;
-import com.github.danskemarkets.handlers.Handler4;
+import dk.danskebank.markets.event.routing.events.Event1;
+import dk.danskebank.markets.event.routing.events.Event2;
+import dk.danskebank.markets.event.routing.events.Event3;
+import dk.danskebank.markets.event.routing.handlers.Handler4;
+import dk.danskebank.markets.event.routing.handlers.Handler1;
+import dk.danskebank.markets.event.routing.handlers.Handler2;
+import dk.danskebank.markets.event.routing.handlers.Handler3;
 import com.google.common.eventbus.EventBus;
 import dk.danskebank.markets.event.processing.Dispatcher;
-import dk.danskebank.markets.event.routing.EventRouter;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 

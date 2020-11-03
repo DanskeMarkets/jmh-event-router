@@ -1,10 +1,17 @@
-package com.github.danskemarkets;
+package dk.danskebank.markets.event.routing;
 
 import com.github.danskemarkets.events.*;
 import com.github.danskemarkets.handlers.*;
 import com.google.common.eventbus.EventBus;
 import dk.danskebank.markets.event.processing.Dispatcher;
-import dk.danskebank.markets.event.routing.EventRouter;
+import dk.danskebank.markets.event.routing.events.*;
+import dk.danskebank.markets.event.routing.handlers.*;
+import dk.danskebank.markets.events.*;
+import dk.danskebank.markets.handlers.*;
+import dk.danskebank.markets.routing.events.*;
+import dk.danskebank.markets.routing.handlers.*;
+import dk.danskebank.routing.events.*;
+import dk.danskebank.routing.handlers.*;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 
@@ -17,11 +24,11 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class EventBusVsEventRouter10Events {
 	// Don't make final to prevent constant folding by the compiler.
-	private Event1   event1 = new Event1(Math.PI);
-	private Event2   event2 = new Event2(42);
-	private Event3   event3 = new Event3("The quick brown fox jumped over the lazy dog.");
-	private Event4   event4 = new Event4("The quick brown fox jumped over the lazy dog 1.");
-	private Event5   event5 = new Event5("The quick brown fox jumped over the lazy dog 2.");
+	private Event1 event1 = new Event1(Math.PI);
+	private Event2 event2 = new Event2(42);
+	private Event3 event3 = new Event3("The quick brown fox jumped over the lazy dog.");
+	private Event4 event4 = new Event4("The quick brown fox jumped over the lazy dog 1.");
+	private Event5 event5 = new Event5("The quick brown fox jumped over the lazy dog 2.");
 	private Event6   event6 = new Event6("The quick brown fox jumped over the lazy dog 3.");
 	private Event7   event7 = new Event7("The quick brown fox jumped over the lazy dog 4.");
 	private Event8   event8 = new Event8("The quick brown fox jumped over the lazy dog 5.");

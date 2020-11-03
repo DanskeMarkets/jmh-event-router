@@ -1,4 +1,4 @@
-package com.github.danskemarkets.events;
+package dk.danskebank.markets.event.routing.events;
 
 public class Event2 implements Event {
 	private final int number;
