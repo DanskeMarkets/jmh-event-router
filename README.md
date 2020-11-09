@@ -10,6 +10,12 @@ To run the benchmark yourself, clone this repository and run
 
 Then run `Main.java`.
 
+## Project Lifecycle
+
+If Danske Bank stops developing this project, it will be stated in this readme.
+While this project is actively developed, reported bugs, that are verified, will be fixed.
+Feature requests/pull requests will be accepted/rejected at Danske Bank's sole discretion without guarantees for any explanation.
+
 # Results
 
 Below are the results when run on a server with Red Hat 4.8, Intel Xeon Gold 6254 processor and OpenJdk 14.0.2.
